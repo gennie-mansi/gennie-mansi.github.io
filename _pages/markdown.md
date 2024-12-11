@@ -7,8 +7,8 @@ redirect_from:
   - /markdown.html
 ---
 
-## Improving the Design and Evaluation of Explanations in AI Systems
-
+## Explainability in AI Systems
+ 
 A core assumption of Explainable AI (XAI) is that explanations are useful to users—that is, users will do something with the explanations. But as we design, create, and evaluate explanation methods, we often fail to consider users’ actions. My work addresses this problem in several ways.
 
 First, I’ve worked to clarify the connection between explanations and actions. One big hindrance to considering users’ actions is a lack of consensus about the kinds of information we can present in explanations and the actions that people can take in response. This makes it difficult to understand and measure how technical methods are changing people’s actions. My work breaks that barrier down by creating a user-centered taxonomy of the kinds of information we provide in explanations and the resulting actions. In this way, it supports the measurement and evaluation of AI explanations in terms of actions. It also helped uncover key principles for how to include information to make explanations relevant to users.
