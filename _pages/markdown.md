@@ -1,293 +1,63 @@
 ---
 permalink: /markdown/
-title: "Markdown"
+title: "Projects"
 author_profile: true
 redirect_from: 
   - /md/
   - /markdown.html
 ---
 
-## Locations of key files/directories
+## Improving the Design and Evaluation of Explanations in AI Systems
 
-* Basic config options: _config.yml
-* Top navigation bar config: _data/navigation.yml
-* Single pages: _pages/
-* Collections of pages are .md or .html files in:
-  * _publications/
-  * _portfolio/
-  * _posts/
-  * _teaching/
-  * _talks/
-* Footer: _includes/footer.html
-* Static files (like PDFs): /files/
-* Profile image (can set in _config.yml): images/profile.png
+A core assumption of Explainable AI (XAI) is that explanations are useful to users—that is, users will do something with the explanations. But as we design, create, and evaluate explanation methods, we often fail to consider users’ actions. My work addresses this problem in several ways.
 
-## Tips and hints
+First, I’ve worked to clarify the connection between explanations and actions. One big hindrance to considering users’ actions is a lack of consensus about the kinds of information we can present in explanations and the actions that people can take in response. This makes it difficult to understand and measure how technical methods are changing people’s actions. My work breaks that barrier down by creating a user-centered taxonomy of the kinds of information we provide in explanations and the resulting actions. In this way, it supports the measurement and evaluation of AI explanations in terms of actions. It also helped uncover key principles for how to include information to make explanations relevant to users.
 
-* Name a file ".md" to have it render in markdown, name it ".html" to render in HTML.
-* Go to the [commit list](https://github.com/academicpages/academicpages.github.io/commits/master) (on your repo) to find the last version Github built with Jekyll. 
-  * Green check: successful build
-  * Orange circle: building
-  * Red X: error
-  * No icon: not built
-* Academic Pages uses [Jekyll Kramdown](https://jekyllrb.com/docs/configuration/markdown/), GitHub Flavored Markdown (GFM) parser, which is similar to the version of Markdown used on GitHub, but may have some minor differences. 
-  * Some of emoji supported on GitHub should be supposed via the [Jemoji](https://github.com/jekyll/jemoji) plugin :computer:.
-  * The best list of the supported emoji can be found in the [Emojis for Jekyll via Jemoji](https://www.fabriziomusacchio.com/blog/2021-08-16-emojis_for_Jekyll/#computer) blog post.
+<p align="center">
+  <img src="/images/Design_References.jpg" />
+</p>
 
-## Resources
- * [Liquid syntax guide](https://shopify.github.io/liquid/tags/control-flow/)
- * [MathJax Documentation](https://docs.mathjax.org/en/latest/)
-
-## MathJax 
-
-Support for MathJax Version 3.0 is included in the template:
-
-$$
-\displaylines{
-\nabla \cdot E= \frac{\rho}{\epsilon_0} \\\
-\nabla \cdot B=0 \\\
-\nabla \times E= -\partial_tB \\\
-\nabla \times B  = \mu_0 \left(J + \varepsilon_0 \partial_t E \right)
-}
-$$
+Second, I uncovered an under-explored need from AI explanations. I was interviewing doctors about their use of AI explanations while I was validating the taxonomy. They expressed that they are called on to provide oversight of AI medical systems, but they face legal liability for harm that befalls their patients. AI explanations didn’t help understand or mitigate their legal risk, which seriously impacted their ability to rely on them.
 
-The default delimiters of `$$...$$` and `\\[...\\]` are supported for displayed mathematics, while `\\(...\\)` should be used for in-line mathematics (ex., \\(a^2 + b^2 = c^2\\))
 
-**Note** that since Academic Pages uses Markdown which cases some interference with MathJax and LaTeX for escaping characters and new lines, although [some workarounds exist](https://math.codidact.com/posts/278763/278772#answer-278772).
+Now I’m using the taxonomy to address this need. I used my taxonomy to identify the actions doctors would take if an AI explanation was addressing their legal concern. I’m working backwards to identify the information we should include in AI explanations. While doctors want to mitigate their legal risk, they’re not as good at understanding the law. I’m developing an interview method for use with lawyers to identify this information. I’m using the taxonomy to analyze my conversations with lawyers and identify the factors impacting legal risk and information users need to manage risk. I’ll synthesize my findings into design references that I and others can use to build explanations that can help address users’ legal concerns, creating a clearer path for users to act with AI explanations.
 
-## Markdown guide
+- **Mansi, G.**, Kim, J., Riedl, M. Rethinking Actionability in Explainable AI. (In Prep)
+- **Mansi, G.** & Riedl, M. Recognizing Lawyers as AI Creators and Intermediaries in Contestability. Workshop ”From Stem to Stern: Contestability Along AI Value Chains” at the Conference for Computer Supported Collaborative Work 2024 (CSCW ’24)
+- **Mansi, G.** & Riedl, M. Why Don’t You Do Something About It? Outlining Connections between AI Explanations
+and User Actions. Workshop on Human-Centered Explainable AI at the 2023 Conferences on Computer-Human
+Interaction (CHI ’23).
 
-Academic Pages uses [kramdown](https://kramdown.gettalong.org/index.html) for Markdown rendering, which has some differences from other Markdown implementations such as GitHub's. In addition to this guide, please see the [kramdown Syntax page](https://kramdown.gettalong.org/syntax.html) for full documentation.  
 
-### Header three
+## Concept Catalyst
 
-#### Header four
+<p align="center">
+  <img src="/images/ConceptCatalyst.jpg" />
+</p>
 
-##### Header five
+In K-12 engineering classrooms, teachers help students develop critical thinking skills by requiring them to document their design decisions for hands-on projects. To help students practice iterative design practices through their documentation, teachers write scaffolding questions, creating a large cognitive burden that redirects teachers’ energy away from hands on engagement. Generative AI could help address this challenge, but teachers often do not know how to prompt these systems. We present our design of Concept Catalyst as a case study in addressing these needs. Concept Catalyst is a ChatGPT-based tool that helps teachers better scaffold students’ documentation process, so they are empowered to engage students’ thinking while incorporating AI into their pedagogy. We discuss the results from Wizard-of-Oz studies with 10 engineering teachers, and how Concept Catalyst helps teachers reflect on their teaching practices while improving efficacy, efficiency, and motivation in using AI. We end with implications for design around how structuring AI interactions can support more than improved AI interactions.
 
-###### Header six
+- **Mansi, G.**, Newton, S., Moore, R., Alemdar, M., Riedl, M. Concept Catalyst: Supporting K-12 Engineering
+Design Teachers with Generative AI. (Under Review)
 
-## Blockquotes
+## Experiential Explanations
 
-Single line blockquote:
+Reinforcement Learning (RL) systems can be complex and non-interpretable, making it challenging for non-AI experts to understand or intervene in their decisions. This is due in part to the sequential nature of RL in which actions are chosen because of future rewards. However, RL agents discard the qualitative features of their training, making it difficult to recover user-understandable information for “why” an action is chosen. We propose a technique Experiential Explanations to generate counterfactual explanations by training influence
+predictors along with the RL policy. Influence predictors are models that learn how sources of reward affect the agent in different states, thus restoring information about how the policy reflects the environment.
 
-> Quotes are cool.
+I helped coordinate and conduct the qualitative analysis of a human evaluation study that revealed that participants presented with experiential explanations were better able to correctly guess what an agent would do than those presented with other standard types of explanation. Participants also found that experiential explanations are more understandable, satisfying, complete, useful, and accurate. The qualitative analysis was used to also further provide insights into the factors of experiential explanations that are most useful and guide further technical development.
 
-## Tables
+- Alabdukarim, A., Singh, M., **Mansi, G.**, Hall, K., Ehsan, U., and Riedl, M. Experiential Explanations for Reinforcement Learning. Nerual Computing and Applications 2024 (NCAA ’ 24).
+- Alabdulkumar, A., **Mansi, G.**, Hall, K., and Riedl, M. Experiential Explanations for Reinforcement Learning. Workshop on Explainable AI at the 2023 International Joint Conferences on Artificial Intelligence (IJCAI ’23).
 
-### Table 1
+## Remote  Art Education
 
-| Entry            | Item   |                                                              |
-| --------         | ------ | ------------------------------------------------------------ |
-| [John Doe](#)    | 2016   | Description of the item in the list                          |
-| [Jane Doe](#)    | 2019   | Description of the item in the list                          |
-| [Doe Doe](#)     | 2022   | Description of the item in the list                          |
+<p align="center">
+  <img src="/images/Merged-Scissors-Screens.png" />
+</p>
 
-### Table 2
+Art education plays a central role in early childhood development, and museum outreach programs can significantly enhance art education experiences for K-2 learners in schools. Increased demand for remote learning environments where students and teachers are not co-located has forced educational contexts to adopt technology-mediated learning. However, little research has investigated how technology can integrate museum content into fully remote, K-2 school art education. We elicited design requirements for K-2 art education platforms in a needs assessment study through surveys (N = 22) and interviews (N = 4) with educators. We created a typology of existing platforms, which we evaluated against these requirements. We identified a key unmet need for students to receive feedback on their fine motor skills, and, in response, we created a prototype system with interactive scissors called Chameleon Clippers. We demonstrate its potential to provide this feedback through preliminary user tests with 4–7-year-old children (N=12).
 
-| Header1 | Header2 | Header3 |
-|:--------|:-------:|--------:|
-| cell1   | cell2   | cell3   |
-| cell4   | ce
-ll5   | cell6   |
-|-----------------------------|
-| cell1   | cell2   | cell3   |
-| cell4   | cell5   | cell6   |
-|=============================|
-| Foot1   | Foot2   | Foot3   |
-
-## Definition Lists
-
-Definition List Title
-:   Definition list division.
-
-Startup
-:   A startup company or startup is a company or temporary organization designed to search for a repeatable and scalable business model.
-
-#dowork
-:   Coined by Rob Dyrdek and his personal body guard Christopher "Big Black" Boykins, "Do Work" works as a self motivator, to motivating your friends.
-
-Do It Live
-:   I'll let Bill O'Reilly [explain](https://www.youtube.com/watch?v=O_HyZ5aW76c "We'll Do It Live") this one.
-
-## Unordered Lists (Nested)
-
-  * List item one 
-      * List item one 
-          * List item one
-          * List item two
-          * List item three
-          * List item four
-      * List item two
-      * List item three
-      * List item four
-  * List item two
-  * List item three
-  * List item four
-
-## Ordered List (Nested)
-
-  1. List item one 
-      1. List item one 
-          1. List item one
-          2. List item two
-          3. List item three
-          4. List item four
-      2. List item two
-      3. List item three
-      4. List item four
-  2. List item two
-  3. List item three
-  4. List item four
-
-## Buttons
-
-Make any link standout more when applying the `.btn` class.
-
-## Notices
-
-Basic notices or call-outs are supported using the following syntax:
-
-```markdown
-**Watch out!** You can also add notices by appending `{: .notice}` to the line following paragraph.
-{: .notice}
-```
-
-which wil render as:
-
-**Watch out!** You can also add notices by appending `{: .notice}` to the line following paragraph.
-{: .notice}
-
-### Footnotes
-
-Footnotes can be useful for clarifying points in the text, or citing information.[^1] Markdown support numeric footnotes, as well as text as long as the values are unique.[^note]
-
-```markdown
-This is the regular text.[^1] This is more regular text.[^note]
-
-[^1]: This is the footnote itself.
-[^note]: This is another footnote.
-```
-
-[^1]: Such as this footnote.
-[^note]: When using text for footnotes markers, no spaces are permitted in the name.
-
-## HTML Tags
-
-### Address Tag
-
-<address>
-  1 Infinite Loop<br /> Cupertino, CA 95014<br /> United States
-</address>
-
-### Anchor Tag (aka. Link)
-
-This is an example of a [link](http://github.com "Github").
-
-### Abbreviation Tag
-
-The abbreviation CSS stands for "Cascading Style Sheets".
-
-*[CSS]: Cascading Style Sheets
-
-### Cite Tag
-
-"Code is poetry." ---<cite>Automattic</cite>
-
-### Code Tag
-
-You will learn later on in these tests that `word-wrap: break-word;` will be your best friend.
-
-You can also write larger blocks of code with syntax highlighting supported for some languages, such as Python:
-
-```python
-print('Hello World!')
-```
-
-or R:
-
-```R
-print("Hello World!", quote = FALSE)
-```
-
-### Details Tag (collapsible sections)
-
-The HTML `<details>` tag works well with Markdown and allows you to include collapsible sections, see [W3Schools](https://www.w3schools.com/tags/tag_details.asp) for more information on how to use the tag.
-
-<details>
-  <summary>Collapsed by default</summary>
-  This section was collapsed by default!
-</details>
-
-The source code:
-
-```HTML
-<details>
-  <summary>Collapsed by default</summary>
-  This section was collapsed by default!
-</details>
-```
-
-Or, you can leave a section open by default by including the `open` attribute in the tag:
-
-<details open>
-  <summary>Open by default</summary>
-  This section is open by default thanks to open in the &lt;details open&gt; tag!
-</details>
-
-
-### Emphasize Tag
-
-The emphasize tag should _italicize_ text.
-
-### Insert Tag
-
-This tag should denote <ins>inserted</ins> text.
-
-### Keyboard Tag
-
-This scarcely known tag emulates <kbd>keyboard text</kbd>, which is usually styled like the `<code>` tag.
-
-### Preformatted Tag
-
-This tag styles large blocks of code.
-
-<pre>
-.post-title {
-  margin: 0 0 5px;
-  font-weight: bold;
-  font-size: 38px;
-  line-height: 1.2;
-  and here's a line of some really, really, really, really long text, just to see how the PRE tag handles it and to find out how it overflows;
-}
-</pre>
-
-### Quote Tag
-
-<q>Developers, developers, developers&#8230;</q> &#8211;Steve Ballmer
-
-### Strike Tag
-
-This tag will let you <strike>strikeout text</strike>.
-
-### Strong Tag
-
-This tag shows **bold text**.
-
-### Subscript Tag
-
-Getting our science styling on with H<sub>2</sub>O, which should push the "2" down.
-
-### Superscript Tag
-
-Still sticking with science and Isaac Newton's E = MC<sup>2</sup>, which should lift the 2 up.
-
-### Variable Tag
-
-This allows you to denote <var>variables</var>.
-
-***
-**Footnotes**
-
-The footnotes in the page will be returned following this line, return to the section on <a href="#footnotes">Markdown Footnotes</a>.
-
+- **Mansi, G.**, Roberts, J. Ready, Set, Art: Technology Needs and Tools for Remote K-2 Art Education 21st
+ACM International Conference on Interaction Design and Children (IDC ’22).
+- **Mansi, G.**, Boone, A., Kim, S., Roberts, J. Chameleon Clippers: A Tool for Developing Fine Motor Skills in Remote Education Settings. 2022 International Conference on Computer-Supported Collaborative Learning. Best Technical Paper.
