@@ -7,14 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I’m a 5th year Human-Centered PhD Candidate at the Georgia Institute of Technology, and I work with Mark Riedl.
-
-
-I'm computer scientist and human-centered design researcher passionate about collaborating with algorithm developers to improve communities’ interactions with technology. I draw on my interdisciplinary background to dig deeper into the who, why, and how of creating technology to help people do what they want to do. Through intentional study design and rigorous qualitative analysis, I’ve brought concrete insights for projects in explainable AI systems, education technology, and reinforcement learning agents. 
-
-In my dissertation, I’ve created a user-centered taxonomy which clarifies the connection between the information present in an AI explanation and users’ resulting actions. My research is creating a clear path for developers to design, create, and evaluate AI explanations, so users can meet their core needs.
-
-
+I’m a 5th year Human-Centered PhD Candidate at the Georgia Institute of Technology, and I work with Dr. Mark Riedl. My research focuses on bridging gaps between AI developers and practitioners to improve the design of AI systems in high-stakes domains. My dissertation creates and applies a user-centered taxonomy to improve the way AI explanations are designed, created, and evaluated. As a part of this work, I’m coordinating design between lawyers, developers, and doctors to create AI explanations that address doctors’ legal risks. Outside of my dissertation, I have worked on projects in education to empower teachers in engaging with their students.
 
 
 
