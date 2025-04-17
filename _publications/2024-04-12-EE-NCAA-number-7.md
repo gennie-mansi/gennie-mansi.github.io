@@ -8,5 +8,5 @@ date: 2024-12-10
 venue:
 slidesurl:
 paperurl:
-citation: 'Alabdukarim, A., Singh, M., Mansi, G., Hall, K., Ehsan, U., and Riedl, M. Experiential Explanations for Reinforcement Learning. Nerual Computing and Applications 2024. (forthcoming)'
+citation: 'Alabdukarim, A., Singh, M., Mansi, G., Hall, K., Ehsan, U., and Riedl, M. Experiential Explanations for Reinforcement Learning. Nerual Computing and Applications 2024 (NCAA '24).'
 ---
