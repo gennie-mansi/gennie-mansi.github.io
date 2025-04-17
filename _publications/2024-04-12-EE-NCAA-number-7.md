@@ -2,7 +2,7 @@
 title: "Experiential Explanations for Reinforcement Learning"
 collection: publications
 category: conferences
-permalink: /publication/2024-12-10-EE-NCA-number-7
+permalink: /publication/2024-04-12-EE-NCAA-number-7
 excerpt:
 date: 2024-04-12
 venue:
