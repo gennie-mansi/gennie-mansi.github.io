@@ -1,4 +1,3 @@
-
 ---
 title: "Legally-Informed Explainable AI"
 collection: publications
